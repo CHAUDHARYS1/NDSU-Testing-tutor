@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Testing Tutor </title>
+    <link rel="icon" type="image/png" sizes="66x65" href="assets/img/favicon.png"/>
+    <link rel="icon" type="image/png" sizes="66x65" href="assets/img/favicon.png"/>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=latin-ext"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css"/>
+    <link rel="stylesheet" href="assets/css/login-register.css"/>
+
+</head>
+        <style>
+            body{
+                margin:20px;
+                font-family:'Open Sans', sans-serif;
+                    height:100%;
+
+            }
+          .logo{
+                background:#e7e9eb;
+                padding:20px;
+                width:300px;
+                margin: 0 auto;
+                margin-bottom:10px;
+                border-top-left-radius:10px;
+                border-top-right-radius:10px;
+                text-align:center;
+            }
+          .secondbody {
+    background: #2f8051;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+        .logo img{
+                display:block;
+                height:20;
+         }
+            footer{
+                position:absolute;
+                bottom:0;
+                height:20px;
+                text-align:center;
+                width:100%;
+            }
+            footer p{
+                color:darkgrey;
+                font-size:10px;
+                
+
+            }
+          
+       form{
+           margin: 0 auto;
+           width: 300px;
+           height:340px;
+           padding-top:50px;
+           background:white;
+           padding:40px;
+           border-bottom-left-radius:10px;
+           border-bottom-right-radius:10px;
+
+       }
+       h2{
+           letter-spacing:5px;
+           font-weight:800;
+           font-size:16px;
+           color:#414141;
+       }
+       p{
+           color:#ce9e57;
+           font-size:10px;
+           letter-spacing:1px;
+       }
+       .lowbtn{
+           background:none;
+           font-size:10px;
+           font-weight:40;
+           color:darkgrey;
+           border:none;
+           cursor:pointer;
+       }
+    
+       .submitbtn{
+           background:#ce9e57;
+           padding-left:80px;
+           padding-right:80px;
+           padding-top:5px;
+           padding-bottom:5px;
+           font-size:12px;
+           text-transform:uppercase;
+           border-radius:10px;
+           text-align:center;
+       }
+       .submitbtn:hover{
+           background:#414141;
+           cursor:pointer;
+           color:#ce9e57;
+       }
+       .formlabel{
+           text-transform:uppercase;
+           padding:0px;
+           font-size:12px;
+           letter-spacing:2px;
+       }
+       input{
+           border:none;
+           border-bottom:2px solid #e7e9eb;
+           margin-bottom:10px;
+           
+           
+       }
+       input, .formlabel{
+           margin-left:10px;
+       }
+      
+       svg{
+           vertical-align:middle;
+       }
+
+        </style>
+  
+    <body>  
+    
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+             </asp:ContentPlaceHolder>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    background: white;
+}
+
+.body-two {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 95vh;
+    background: #2f8051;
+}
+
+.body-three {
+    padding-top: 50px;
+}
+
+.logo {
+    background: #e7e9eb;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+    .logo img {
+        height: 30px;
+    }
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background: white;
+    padding: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h2 {
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #414141;
+}
+
+p {
+    color: #ce9e57;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.lowbtn {
+    background: none;
+    font-size: 10px;
+    font-weight: 40;
+    color: darkgrey;
+    border: none;
+    cursor: pointer;
+}
+
+.submitbtn {
+    background: #ce9e57;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .submitbtn:hover {
+        background: #414141;
+        cursor: pointer;
+        color: #ce9e57;
+    }
+
+.formlabel {
+    text-transform: uppercase;
+    padding: 0px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #e7e9eb;
+    margin-bottom: 10px;
+}
+
+input,
+.formlabel {
+    margin-left: 10px;
+}
+
+svg {
+    vertical-align: middle;
+}

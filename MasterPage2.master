@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>testingtutor</title>
+    <link rel="icon" type="image/png" sizes="66x65" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="66x65" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            var progressbar = $("#progressbar"),
+                progressLabel = $(".progress-label");
+
+            progressbar.progressbar({
+                value: false,
+                change: function() {
+                    progressLabel.text(progressbar.progressbar("value") + "%");
+                },
+                complete: function() {
+                    progressLabel.text("Complete!");
+                }
+            });
+
+            function progress() {
+                var val = progressbar.progressbar("value") || 0;
+
+                progressbar.progressbar("value", val + 2);
+
+                if (val < 99) {
+                    setTimeout(progress, 60);
+                }
+            }
+
+            setTimeout(progress, 2000);
+
+            $("#progressbar").progressbar({
+                complete: function() {
+                    $('#feedbackScores').show();
+                    $('#progressbar').hide();
+                }
+            });
+
+
+            $('.fillers, .password').focus(function() {
+                $(this).css({
+                    "background": "white",
+                    "border-left": "2px solid grey",
+                    "box-shadow": "0 0 11px rgba(33,33,33,.2)"
+                });
+            });
+            $('.fillers, .password').blur(function() {
+                $(this).css({
+                    "background": "#e7e9eb",
+                    "border-left": "none",
+                    "box-shadow": "none"
+                });
+            });
+            $('.fillers').change(function() {
+                $("#btnSaveProfile").removeClass("greyBtn").addClass("btnGold");
+            });
+            $('.password').change(function() {
+                $("#btnPasswordChange").removeClass("greyBtn").addClass('btnGold');
+            });
+            $('#statementCoverage,#conditionalCoverage, #brandCoverage').each(function() {
+                var el = $(this);
+                var value = parseFloat(el.text());
+                if (value > 90) {
+                    el.css("color", "green");
+                } else if (value <= 90) {
+                    el.css("color", "orange");
+                };
+                if (value <= 70) {
+                    el.css("color", "red");
+                }
+            });
+        });
+        $(window).on("load", function() {
+            $('.newsFlash').fadeIn();
+
+            $('#gotIt').click(function() {
+                $('.newsFlash').fadeOut();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-white clean-navbar">
+        <div class="container-fluid"><a class="navbar-brand logo" style="height=&quot;100%&quot;" href="#"><img class="img-fluid" id="logoTagline" style="height: 33px;" src="assets/img/logo_tagline.png"><img src="assets/img/logo.png" height="33" id="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #414141;" href="Index.aspx">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #414141;" href="Test.aspx">Test</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #414141;" href="History.aspx">History</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #414141;" href="About.aspx">About</a></li>
+
+                      <li class="nav-item dropdown" role="presentation"><a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #414141;" href="#">Manage<i class="material-icons icons">
+                                arrow_drop_down
+                            </i></a>
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="JoinGroup.aspx"><i class="material-icons icons">add_circle_outline</i>Join Group(s)</a>
+                            <a class="dropdown-item" href="ManageGroup.aspx"><i class="material-icons icons">group</i>Manage Groups</a>
+                            <a class="dropdown-item" href="EditProfile.aspx"><i class="material-icons icons">edit</i>Edit Profile</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #414141;" data-toggle="modal" data-target="#signout" href="#">Signout<i class="material-icons icons">arrow_forward</i>
+
+                            <div class="modal fade" role="dialog" tabindex="-1" id="signout">
+                                <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body text-center disabled">
+                                            <p style="margin-top: 34px;">Are you sure you want to signout?</p>
+                                        </div>
+                                        <div class="modal-footer d-xl-flex justify-content-xl-end"><a class="btn btn-light btn-sm" role="button" data-dismiss="modal" area-label="Close">No</a>
+                                            <a class="btn btn-success btn-sm" role="button" href="Logout.aspx">Yes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+             </asp:ContentPlaceHolder>
+
+    </body>
+    </html>

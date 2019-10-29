@@ -1,0 +1,167 @@
+#dashboard h5 {
+    color: grey;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.box-one:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.box-one div {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    background: #f2f2f2;
+}
+
+    .box-one div:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+        opacity: 0.5;
+    }
+
+.dashboardIcons {
+    height: 100px;
+}
+
+.myDashboard {
+    background: grey;
+}
+
+    .myDashboard p {
+        color: #f0b65f;
+        margin-left: 20px;
+        padding: 5px;
+    }
+
+body {
+    background: #f8f8f8;
+}
+
+/* END STYLE FOR INDEX PAGE SUPERVISOR --*/
+
+#code {
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.tableHead th {
+    color: #414141;
+}
+
+.studentNames {
+    color: #414141;
+}
+
+.groupName {
+    color: #2f8051;
+}
+
+.allFile {
+    color: #f0b65f;
+}
+
+.newTab {
+    color: #414141;
+}
+
+.fileName {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*
+    .icons {
+        font-size: 18px;
+    }
+*/
+.tableTitle {
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Roboto Mono", monospace;
+}
+
+.backToDashboard a {
+    color: black;
+}
+
+.backToDashboard span {
+    color: #f0b65f;
+}
+
+#instructorHeading {
+    margin-top: 50px;
+}
+
+#instructorInputs {
+    margin-top: 50px;
+}
+
+.classes {
+    border: 1px solid grey;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.deleteIcon {
+    font-size: 22px;
+}
+
+.deleteForever {
+    font-size: 50px;
+}
+
+.instructorName {
+    color: limegreen;
+}
+
+/******* SEARCH PAGE CSS ****/
+
+.quickSearch {
+    height: 700px;
+}
+
+.search_icons {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.search_btn {
+    background: #f0b65f;
+    height: 45px;
+    width: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+}
+
+.search {
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    outline: none;
+}
+
+    .search::placeholder {
+        padding-left: 50px;
+        color: lightgrey;
+    }
+
+    .search:focus {
+        padding-left: 60px;
+    }
+
+/* END SEARCH PAGE CSS */
+
+.bigInput {
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}

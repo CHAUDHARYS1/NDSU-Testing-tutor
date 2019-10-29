@@ -1,0 +1,30 @@
+
+namespace GradeCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nameFirst;
+            string nameLast;
+            float totalPoints;
+            float scorePercentage;
+            char finalGrade;
+
+   
+            totalPoints = intParse(ConsoleReadLine());
+
+            if ((totalPoints  0) && (totalPoints  1000))
+            { ; }
+            else
+            {
+               
+                return;
+            }
+            scorePercentage = (totalPoints  10)
+
+           
+      
+        }
+    }
+}

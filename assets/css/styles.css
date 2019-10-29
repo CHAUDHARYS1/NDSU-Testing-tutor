@@ -1,0 +1,448 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "PT Mono", monospace;
+    font-size: 100%;
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-link {
+    display: flex;
+    font-weight: 600;
+    color: #414141;
+    font-size: 14px;
+}
+
+.icons {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+p {
+    color: #414141;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+/* NEW CSS */
+.btnGold:hover {
+    background: #2f8051;
+    text-decoration: none;
+    color: white;
+}
+
+.btnGold {
+    background: #f0b65f;
+    padding: 5px 50px 5px 50px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    color: #414141;
+    font-weight: 800;
+    text-decoration: none;
+    border: none;
+}
+
+.personalize input {
+    background: #e7e9eb;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.personalize input {
+    width: 300px;
+}
+
+form input {
+    outline: none;
+}
+
+
+.greyBtn {
+    background: #e7e9eb;
+    padding: 5px 50px 5px 50px;
+    border-radius: 5px;
+    color: #414141;
+    font-family: "Roboto Mono", monospace;
+    cursor: not-allowed;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* NEW CSS */
+
+h1 {
+    color: #1c1c1c;
+    font-weight: 800;
+    font-size: 120px;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #414141;
+    font-weight: 800;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.disc {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+    .nav-item a:hover {
+        border-left: 3px solid #f0b65f;
+    }
+
+.subheading {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nameofuser {
+    color: #124e45;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+th {
+    color: #f0b65f;
+    font-weight: bold;
+}
+
+.aboutHeading {
+    color: #4a4a4a;
+    font-size: 20px;
+    font-weight: 900;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+
+.aboutParagraph {
+    color: #454545;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+#moreAbout {
+    margin-top: 200px;
+}
+
+    #moreAbout i {
+        font-size: 50px;
+    }
+
+    #moreAbout hr {
+        height: 3px;
+        background: #f0b65f;
+    }
+
+#moreAbout {
+    background: rgb(255, 255, 255);
+}
+
+.scrolltotop {
+    background: #f1f1f1;
+    bottom: 0;
+}
+
+#two {
+    display: none;
+}
+
+#testYourSoftware {
+    margin-top: 150px;
+}
+
+#welcome {
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#one {
+    height: 700px;
+}
+
+#welcomeHead {
+    margin-top: 100px;
+}
+
+#secondWelcomeHead {
+    margin-top: 50px;
+}
+
+#logo {
+    display: none;
+}
+
+.greenHighlight {
+    color: #05bf3e;
+    font-weight: bold;
+}
+
+.notes {
+    color: #05bf3e;
+    font-size: 13px;
+}
+
+.secondnotes {
+    color: #f0b65f;
+    font-size: 13px;
+}
+
+.underlineInputs {
+    border: none;
+    border-bottom: 2px solid #f0b65f;
+    margin-left: 20px;
+    outline: none;
+}
+
+/***** MANAGE GROUP PAGE FOR STUDENTS ****/
+.deleteIcon {
+    font-size: 22px;
+}
+
+.deleteForever {
+    font-size: 50px;
+}
+
+.tableHead th {
+    color: #414141;
+}
+
+.groupName {
+    color: #2f8051;
+    text-decoration: underline;
+}
+
+/*
+.icons {
+    font-size: 18px;
+}*/
+) .tableTitle {
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Roboto Mono", monospace;
+}
+
+/*********** ABOUT PAGE CSS *****/
+
+.wholeTitle {
+    height: 500px;
+    margin-top: 200px;
+}
+
+.mainTitle {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 100px;
+}
+
+    .mainTitle h2 {
+        font-size: 50px;
+    }
+
+.secondTitle {
+    z-index: 1;
+    position: absolute;
+}
+
+    .secondTitle h2 {
+        font-size: 72px;
+        color: #f8f8f8;
+        margin-top: 50px;
+        font-family: "Roboto Mono", monospace;
+    }
+
+.question {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+.askQuestion {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #f0b65f;
+    outline: none;
+}
+
+.newsFlash {
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    /* display: none;*/
+    width: 450px;
+}
+
+/***** END ABOUT PAGE CSS */
+/
+/***** FEED BACK PAGE *****/
+.codeTxt {
+    color: grey;
+    padding: 20px;
+}
+
+#progressbar {
+    border: none;
+    border-radius: 10px;
+}
+
+.ui-progressbar {
+    position: relative;
+}
+
+.progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+    color: #535353;
+}
+
+
+#feedbackScores {
+    display: none;
+}
+
+.default-num {
+    color: black;
+    font-family: roboto;
+}
+
+.score-rating-boxes {
+    height: 30px;
+    width: 10px;
+    vertical-align: bottom;
+}
+
+
+/***** END FEEDBACK PAGE CSS */
+//
+/************************START  S U P E R V I S O R        S T Y L E S *************************************/
+/********************** END S U P E R V I S O R        S T Y L E S *************************************/
+@media only screen and (max-width: 600px) {
+    h1
+
+{
+    font-size: 70px;
+}
+
+#one {
+    display: none;
+}
+
+#two {
+    display: block;
+}
+
+#laptop {
+    top: 0;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -70px;
+}
+
+    #laptop img {
+        width: 500px;
+    }
+
+#welcome {
+    margin-top: 500px;
+    width: 100%;
+}
+
+#logo {
+    display: block;
+}
+
+#logoTagline {
+    display: none;
+}
+
+.wholeTitle {
+    margin-top: 50px;
+}
+
+.mainTitle {
+    z-index: 2;
+    margin-left: 0px;
+}
+
+    .mainTitle h2 {
+        font-size: 50px;
+    }
+
+.secondTitle {
+    z-index: 1;
+    position: absolute;
+}
+
+    .secondTitle h2 {
+        font-size: 72px;
+        color: #f8f8f8;
+        margin-top: -50px;
+    }
+
+.askQuestion {
+    margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 806px) {
+    #one {
+        display: none;
+    }
+
+    #two {
+        display: block;
+    }
+
+    #laptop {
+        top: 0;
+        position: absolute;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+        #laptop img {
+            width: 600px;
+        }
+
+    #welcome {
+        margin-top: 500px;
+        width: 100%;
+    }
+
+    #logo {
+        display: block;
+    }
+
+    #logoTagline {
+        display: none;
+    }
+}
