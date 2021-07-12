@@ -60,4 +60,4 @@ MAY SESSION TASK COMPLETED:
 
 Between both sessions, we finished a fully functional prototype. The testing tutor algorithms have not been designed and implemented, but the front end web application is ready to support it. 
 
-To view the the user interface, click here: http://thedesignerisland.com/testingtutor/
+To view the the user interface, click here: shitalchau.com
